@@ -20,7 +20,7 @@ file(WRITE "${HARNESS_FILE}" "exec \"$1\" \"$2\" < \"$2\"\n")
 
 include(CTest)
 
-set(source_dirs 1.3.4.1_2 1.3.4.1_3)
+set(source_dirs 1.3.4.1_2 1.3.4.1_3 1.3.4.1_4)
 
 foreach (source_dir IN LISTS source_dirs)
     add_executable(cp_xcas_${source_dir} "${source_dir}/main.cxx")
